@@ -1,0 +1,20 @@
+{
+  "name": "@living-legacy/mobile",
+  "version": "0.1.0",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@living-legacy/core": "workspace:*",
+    "expo": "~53.0.20",
+    "expo-router": "~5.1.4",
+    "react": "19.0.0",
+    "react-native": "0.79.5"
+  },
+  "devDependencies": { "typescript": "^5.8.3" }
+}
+

@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "Living Legacy",
+    "slug": "living-legacy",
+    "scheme": "livinglegacy",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": { "supportsTablet": true },
+    "android": { "package": "org.yourlivinglegacy.app" }
+  }
+}
+
