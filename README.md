@@ -10,4 +10,4 @@ For counsel and a prior-art search, see the [candidate patent-positioning one-pa
 
 ## Current status
 
-The repository foundation is intentionally independent of the prior hosted application. Dependencies are installed; the shared TypeScript checks and production web build pass. No Vercel, Namecheap, or GitHub production setting has been changed.
+The repository foundation is intentionally independent of the prior hosted application. The web project is connected to Vercel, Clerk, and Neon. Clerk protects the archive and source-writing API; Neon schema is tracked at `apps/web/db/schema.sql`. Apply that schema before the first production archive run. Private media upload needs a Blob-compatible object store before voice, photo, video, and files can be preserved server-side.

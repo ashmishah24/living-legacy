@@ -1,8 +1,10 @@
 import { CaptureStarter } from "./capture-starter";
+import { AccountNavigation } from "./account-navigation";
 
 export default function HomePage() {
   return (
     <main className="shell">
+      <AccountNavigation />
       <header className="header">
         <p className="eyebrow">Private family archive</p>
         <h1>Keep the original moment close.</h1>
@@ -17,4 +19,3 @@ export default function HomePage() {
     </main>
   );
 }
-

@@ -9,7 +9,9 @@
     "lint": "tsc --noEmit"
   },
   "dependencies": {
+    "@clerk/nextjs": "^7.9.2",
     "@living-legacy/core": "workspace:*",
+    "@neondatabase/serverless": "^1.1.0",
     "next": "^15.5.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
@@ -21,4 +23,3 @@
     "typescript": "^5.8.3"
   }
 }
-
