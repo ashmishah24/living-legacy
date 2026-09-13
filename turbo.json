@@ -1,5 +1,6 @@
 {
   "$schema": "https://turborepo.com/schema.json",
+  "globalEnv": ["DATABASE_URL", "CLERK_SECRET_KEY", "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY", "livinglegacy_DATABASE_URL", "livinglegacy_CLERK_SECRET_KEY", "NEXT_PUBLIC_livinglegacy_CLERK_PUBLISHABLE_KEY"],
   "tasks": {
     "build": { "dependsOn": ["^build"], "outputs": [".next/**", "dist/**"] },
     "typecheck": { "dependsOn": ["^typecheck"], "outputs": [] },
@@ -7,4 +8,3 @@
     "dev": { "cache": false, "persistent": true }
   }
 }
-
