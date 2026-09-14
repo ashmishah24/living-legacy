@@ -4,9 +4,10 @@
     "slug": "living-legacy",
     "scheme": "livinglegacy",
     "orientation": "portrait",
-    "userInterfaceStyle": "light",
-    "ios": { "supportsTablet": true },
-    "android": { "package": "org.yourlivinglegacy.app" }
+    "userInterfaceStyle": "dark",
+    "icon": "./assets/living-legacy-logo.png",
+    "splash": { "image": "./assets/living-legacy-logo.png", "resizeMode": "contain", "backgroundColor": "#05291e" },
+    "ios": { "supportsTablet": true, "bundleIdentifier": "org.yourlivinglegacy.app", "associatedDomains": ["applinks:yourlivinglegacy.org"] },
+    "android": { "package": "org.yourlivinglegacy.app", "intentFilters": [{ "action": "VIEW", "autoVerify": true, "data": [{ "scheme": "https", "host": "yourlivinglegacy.org", "pathPrefix": "/" }], "category": ["BROWSABLE", "DEFAULT"] }] }
   }
 }
-
