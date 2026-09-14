@@ -1,14 +1,16 @@
 import { CaptureStarter } from "./capture-starter";
 import { AccountNavigation } from "./account-navigation";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
     <main className="shell">
       <AccountNavigation />
       <header className="header">
-        <p className="eyebrow">Private family archive</p>
+        <Image alt="Living Legacy — Your story lives on" className="hero-logo" height={280} priority src="/brand/living-legacy-logo.png" width={280} />
+        <p className="eyebrow">Your story lives on</p>
         <h1>Keep the original moment close.</h1>
-        <p className="lede">Capture a memory now. Add context and shape the story only when you are ready.</p>
+        <p className="lede">A private, enduring place to capture memories in the form they were first shared.</p>
       </header>
       <CaptureStarter />
       <section className="principles" aria-label="Living Legacy principles">
