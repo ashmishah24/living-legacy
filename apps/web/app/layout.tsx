@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Fraunces, Nunito_Sans } from "next/font/google";
-import { clerkPublishableKey } from "../lib/clerk-env";
 import "./styles.css";
 
 const display = Fraunces({ subsets: ["latin"], variable: "--font-display" });
@@ -15,5 +14,5 @@ export const metadata: Metadata = {
 export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#eff6fa" };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <ClerkProvider publishableKey={clerkPublishableKey}><html lang="en" className={`${display.variable} ${body.variable}`}><body>{children}</body></html></ClerkProvider>;
+  return <ClerkProvider><html lang="en" className={`${display.variable} ${body.variable}`}><body>{children}</body></html></ClerkProvider>;
 }
