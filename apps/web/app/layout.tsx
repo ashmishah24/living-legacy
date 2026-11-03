@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "A private, source-preserving family archive.",
 };
 
-export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#eff6fa" };
+export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#f7f8fb" };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return <ClerkProvider><html lang="en" className={`${display.variable} ${body.variable}`}><body>{children}</body></html></ClerkProvider>;
